@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoNexo Servicios | Catálogo de mantenimiento preventivo</title>
+  <meta name="description" content="Catálogo ilustrativo de servicios de mantenimiento preventivo de AutoNexo Servicios.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado__fila">
+      <a class="logo" href="#inicio" aria-label="AutoNexo Servicios, inicio">
+        <span class="logo__marca" aria-hidden="true">AN</span>
+        <span class="logo__texto">AutoNexo <small>Servicios</small></span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#resumen">Mi resumen</a></li>
+          <li><a href="#condiciones">Condiciones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <section class="hero">
+      <h1>Compara el mantenimiento de tu vehículo en segundos</h1>
+      <p>Consulta qué incluye cada servicio, cuánto dura y su precio de referencia. Selecciona uno para ver tu resumen.</p>
+      <p class="aviso" role="note">Proyecto académico: precios, duraciones, condiciones, contactos e imágenes son <strong>ficticios e ilustrativos</strong>.</p>
+    </section>
+
+    <div class="layout">
+
+      <section id="servicios" class="catalogo" aria-labelledby="titulo-catalogo">
+        <h2 id="titulo-catalogo">Catálogo de servicios</h2>
+
+        <!-- CATEGORÍA 1 -->
+        <section class="categoria" aria-labelledby="cat-motor">
+          <h3 id="cat-motor">Motor y energía</h3>
+          <div class="tarjetas">
+
+            <article class="tarjeta" data-id="aceite" data-nombre="Cambio de aceite y filtro"
+              data-duracion="45 min" data-precio="RD$ 2,800"
+              data-desc="Reemplazo de aceite de motor, filtro de aceite y revisión visual de niveles de fluidos.">
+              <img src="img/aceite.jfif" alt="Ilustración de una gota de aceite" width="400" height="240" loading="lazy">
+              <div class="tarjeta__cuerpo">
+                <h4>Cambio de aceite y filtro</h4>
+                <p>Reemplazo de aceite de motor, filtro de aceite y revisión visual de niveles de fluidos.</p>
+                <ul class="datos">
+                  <li><span>Duración</span> 45 min</li>
+                  <li><span>Precio ref.</span> RD$ 2,800</li>
+                </ul>
+                <button type="button" class="btn btn--sel" aria-pressed="false">Seleccionar</button>
+              </div>
+            </article>
+
+            <article class="tarjeta" data-id="bateria" data-nombre="Revisión de batería"
+              data-duracion="30 min" data-precio="RD$ 900"
+              data-desc="Prueba de carga, limpieza de bornes y verificación del sistema de carga del alternador.">
+              <img src="img/bateria.jfif" alt="Ilustración de una batería de vehículo" width="400" height="240" loading="lazy">
+              <div class="tarjeta__cuerpo">
+                <h4>Revisión de batería</h4>
+                <p>Prueba de carga, limpieza de bornes y verificación del sistema de carga del alternador.</p>
+                <ul class="datos">
+                  <li><span>Duración</span> 30 min</li>
+                  <li><span>Precio ref.</span> RD$ 900</li>
+                </ul>
+                <button type="button" class="btn btn--sel" aria-pressed="false">Seleccionar</button>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- CATEGORÍA 2 -->
+        <section class="categoria" aria-labelledby="cat-seguridad">
+          <h3 id="cat-seguridad">Seguridad y rodaje</h3>
+          <div class="tarjetas">
+
+            <article class="tarjeta" data-id="frenos" data-nombre="Revisión de frenos"
+              data-duracion="60 min" data-precio="RD$ 1,500"
+              data-desc="Inspección de pastillas, discos, líquido de frenos y mangueras, con informe del estado.">
+              <img src="img/frenos.jfif" alt="Ilustración de un disco de freno" width="400" height="240" loading="lazy">
+              <div class="tarjeta__cuerpo">
+                <h4>Revisión de frenos</h4>
+                <p>Inspección de pastillas, discos, líquido de frenos y mangueras, con informe del estado.</p>
+                <ul class="datos">
+                  <li><span>Duración</span> 60 min</li>
+                  <li><span>Precio ref.</span> RD$ 1,500</li>
+                </ul>
+                <button type="button" class="btn btn--sel" aria-pressed="false">Seleccionar</button>
+              </div>
+            </article>
+
+            <article class="tarjeta" data-id="alineacion" data-nombre="Alineación y balanceo"
+              data-duracion="75 min" data-precio="RD$ 2,200"
+              data-desc="Ajuste de ángulos de dirección y balanceo de las cuatro ruedas para un desgaste uniforme.">
+              <img src="img/alineacion.jpg" alt="Ilustración de una rueda con flechas de alineación" width="400" height="240" loading="lazy">
+              <div class="tarjeta__cuerpo">
+                <h4>Alineación y balanceo</h4>
+                <p>Ajuste de ángulos de dirección y balanceo de las cuatro ruedas para un desgaste uniforme.</p>
+                <ul class="datos">
+                  <li><span>Duración</span> 75 min</li>
+                  <li><span>Precio ref.</span> RD$ 2,200</li>
+                </ul>
+                <button type="button" class="btn btn--sel" aria-pressed="false">Seleccionar</button>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- CATEGORÍA 3 -->
+        <section class="categoria" aria-labelledby="cat-diagnostico">
+          <h3 id="cat-diagnostico">Diagnóstico y confort</h3>
+          <div class="tarjetas">
+
+            <article class="tarjeta" data-id="diagnostico" data-nombre="Diagnóstico electrónico"
+              data-duracion="40 min" data-precio="RD$ 1,800"
+              data-desc="Lectura de códigos de falla con escáner OBD-II e interpretación de resultados.">
+              <img src="img/diagnostico.avif" alt="Ilustración de un escáner de diagnóstico" width="400" height="240" loading="lazy">
+              <div class="tarjeta__cuerpo">
+                <h4>Diagnóstico electrónico</h4>
+                <p>Lectura de códigos de falla con escáner OBD-II e interpretación de resultados.</p>
+                <ul class="datos">
+                  <li><span>Duración</span> 40 min</li>
+                  <li><span>Precio ref.</span> RD$ 1,800</li>
+                </ul>
+                <button type="button" class="btn btn--sel" aria-pressed="false">Seleccionar</button>
+              </div>
+            </article>
+
+            <article class="tarjeta" data-id="aire" data-nombre="Mantenimiento de aire acondicionado"
+              data-duracion="90 min" data-precio="RD$ 3,500"
+              data-desc="Revisión de presión del gas, limpieza de filtro de cabina y prueba de enfriamiento.">
+              <img src="img/aire.jfif" alt="Ilustración de un copo de nieve de aire acondicionado" width="400" height="240" loading="lazy">
+              <div class="tarjeta__cuerpo">
+                <h4>Mantenimiento de aire acondicionado</h4>
+                <p>Revisión de presión del gas, limpieza de filtro de cabina y prueba de enfriamiento.</p>
+                <ul class="datos">
+                  <li><span>Duración</span> 90 min</li>
+                  <li><span>Precio ref.</span> RD$ 3,500</li>
+                </ul>
+                <button type="button" class="btn btn--sel" aria-pressed="false">Seleccionar</button>
+              </div>
+            </article>
+
+          </div>
+        </section>
+      </section>
+
+      <aside id="resumen" class="resumen" aria-labelledby="titulo-resumen" aria-live="polite">
+        <h2 id="titulo-resumen">Mi resumen de interés</h2>
+        <p id="resumen-vacio" class="resumen__vacio">Aún no has seleccionado ningún servicio.</p>
+        <div id="resumen-detalle" class="resumen__detalle" hidden>
+          <h3 id="res-nombre"></h3>
+          <p id="res-desc"></p>
+          <ul class="datos">
+            <li><span>Duración</span> <strong id="res-duracion"></strong></li>
+            <li><span>Precio ref.</span> <strong id="res-precio"></strong></li>
+          </ul>
+        </div>
+        <button type="button" id="btn-limpiar" class="btn btn--limpiar" disabled>Limpiar selección</button>
+        <p class="resumen__nota">Este resumen es solo informativo: no genera citas, órdenes ni pagos.</p>
+      </aside>
+
+    </div>
+
+    <section id="condiciones" class="condiciones" aria-labelledby="titulo-condiciones">
+      <h2 id="titulo-condiciones">Condiciones de atención</h2>
+      <div class="condiciones__grid">
+        <article>
+          <h3>Horario</h3>
+          <p>Lunes a viernes de 8:00 a. m. a 6:00 p. m. y sábados de 8:00 a. m. a 1:00 p. m. (ficticio).</p>
+        </article>
+        <article>
+          <h3>Atención</h3>
+          <p>Por orden de llegada. Los tiempos son estimados y pueden variar según el vehículo.</p>
+        </article>
+        <article>
+          <h3>Precios</h3>
+          <p>Precios de referencia en RD$, sin repuestos adicionales ni ITBIS (ficticio).</p>
+        </article>
+        <article>
+          <h3>Garantía</h3>
+          <p>30 días sobre la mano de obra de los servicios realizados (ficticio).</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contacto" class="pie">
+    <div class="pie__grid">
+      <div>
+        <strong>AutoNexo Servicios</strong>
+        <p>Empresa ficticia con fines académicos.</p>
+      </div>
+      <div>
+        <p>Tel.: 809-000-0000 (ficticio)</p>
+        <p>Correo: contacto@autonexo.example</p>
+        <p>Santo Domingo, República Dominicana</p>
+      </div>
+    </div>
+    <p class="pie__copy">© 2026 AutoNexo Servicios · Proyecto académico ITLA · [TU NOMBRE] · [MATRÍCULA]</p>
+  </footer>
+
+</body>
+</html>
